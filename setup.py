@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 import setuptools
-from verwatch.core import VERSION
+
+VERSION = "0.6"
 
 setuptools.setup(
     name='verwatch',
@@ -13,5 +14,8 @@ setuptools.setup(
     packages=['verwatch','verwatch.fetchers'],
     entry_points={
         "console_scripts": ["verw = verwatch.shell:main"]
-    }
+    },
+    install_requires=[
+        "blessings",
+    ],
     )

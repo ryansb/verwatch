@@ -6,9 +6,9 @@ import fetch
 import re
 import yaml
 import blessings
+import pkg_resources
 
-
-VERSION = '0.6'
+VERSION = pkg_resources.get_distribution('verwatch').version
 
 TERM = blessings.Terminal()
 TERM_PLAIN = util.PlainTerminal()
