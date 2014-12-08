@@ -15,7 +15,11 @@ setuptools.setup(
     entry_points={
         "console_scripts": ["verw = verwatch.shell:main"]
     },
+    tests_require=[
+        'pytest'
+    ],
     install_requires=[
         "blessings",
+        "docopt",
     ],
     )
